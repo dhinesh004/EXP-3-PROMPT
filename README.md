@@ -3,6 +3,39 @@
 ### REGISTER NUMBER : 
 ### Aim: To design an AI-powered chatbot that assists customers in resolving issues related to product troubleshooting, order tracking, and general inquiries. The chatbot should handle various customer queries efficiently while maintaining a conversational and user-friendly tone. In this experiment, we will employ different prompt patterns to guide the development process of the chatbot, ranging from basic task-oriented prompts to more complex, persona-driven prompts.
 
+Scenario: Resolving Wi-Fi Connectivity Issues with a Smart Device 
+
+Product: Smart Thermostat Pro 
+
+User Issue: "My Smart Thermostat Pro isn't connecting to my Wi-Fi." 
+
+Chatbot Interaction: 
+1.	Straightforward Prompt (Initial User Query): 
+•	User: "My Smart Thermostat Pro isn't connecting to my Wi-Fi." 
+•	Internal Prompt to AI: "The user is reporting a Wi-Fi connectivity issue with the Smart Thermostat Pro. Acknowledge the issue and offer initial basic troubleshooting." 
+•	Chatbot Response: 
+"Hi there! I understand your Smart Thermostat Pro is having trouble connecting to your WiFi. Let's try to get this sorted out. Have you tried restarting your thermostat and your Wi-Fi router?" 
+2.	Preceding Question Prompting (Gathering Specific Details): 
+•	User: "Yes, I've restarted both, but it's still not connecting." 
+•	Internal Prompt to AI: "The user has already tried restarting. Ask a preceding question to gather more specific information about the Wi-Fi setup." 
+•	Chatbot Response: 
+"Okay, thanks for trying that. To help me understand better, could you please tell me the name (SSID) of your Wi-Fi network and whether you are using a 2.4 GHz or 5 GHz network?" 
+3.	User Provides Information: 
+•	User: "My Wi-Fi name is 'HomeNet' and it's a 2.4 GHz network." 
+4.	Tabular Format Prompting (Delivering a Structured Troubleshooting Guide): 
+•	Internal Prompt to AI: "The user's Wi-Fi network is 'HomeNet' (2.4 GHz). Generate a step-by-step troubleshooting guide in a numbered list format focusing on 2.4 GHz connectivity issues for the Smart Thermostat Pro." 
+ 
+•	Chatbot Response: "Thanks for that information. Here's a step-by-step guide to try connecting your Smart Thermostat Pro to your 'HomeNet' (2.4 GHz) Wi-Fi 
+ 
+STEP 	ACTION 	EXPECTED OUTCOME 
+Check Wi-Fi Password 	Ensure you are entering the correct password for 'HomeNet'. Double-check for typos and capitalization. 	The thermostat should attempt to connect if the password is correct. 
+ Bring Thermostat Close 	Temporarily move the thermostat closer to your Wi-Fi router to rule out signal strength issues 	 If it connects when closer, the original location might have a weak signal. 
+Forget and Reconnect 	On the thermostat's settings menu, try forgetting the 'HomeNet' network and then attempt to reconnect. 	This can sometimes resolve temporary 	connection glitches.  
+ 
+Check Router Settings 	 Ensure your router is broadcasting the 2.4 GHz band and that MAC address filtering (if enabled) isn't blocking the thermostat 	 You might need to access your router's configuration page 
+Restart Thermostat (Again) 	After making any router changes, restart the Smart Thermostat Pro. 	This ensures the thermostat picks up the new settings 
+
+
 ### Algorithm:  1. Direct Instruction Prompts
 Objective: Guide the chatbot to respond concisely to customer inquiries.
 Prompt Pattern:
